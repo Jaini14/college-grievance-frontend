@@ -1,0 +1,279 @@
+.adm-wrapper {
+    min-height: 100vh;
+    overflow-y: auto;
+    background-color: #f4f7fe;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.adm-nav {
+    background: white;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adm-logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #3b82f6;
+}
+
+.adm-logout {
+    background: #ef4444;
+    border: none;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.adm-content {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Stats */
+.adm-stats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.adm-stat-card {
+    width: 200px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    border-bottom: 4px solid #cbd5e1;
+}
+
+.adm-stat-card.purple {
+    border-color: #0ea5e9;
+}
+
+.adm-stat-card.sky {
+    border-color: #1d0ee9;
+}
+
+.adm-stat-card.orange {
+    border-color: #f59e0b;
+}
+
+.adm-stat-card.green {
+    border-color: #10b981;
+}
+
+.adm-stat-card h4 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #1e293b;
+}
+
+.adm-stat-card p {
+    margin: 5px 0 0;
+    color: #64748b;
+    font-weight: 600;
+}
+
+/* Table */
+.adm-table-container {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.adm-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.adm-table th {
+    text-align: center;
+    padding: 12px;
+    background: #f8fafc;
+    color: #475569;
+    font-size: 0.9rem;
+}
+
+.adm-table td {
+    text-align: center;
+    padding: 15px 12px;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 0.95rem;
+}
+
+/* Badges */
+.adm-badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+/* --- New Badge and Column Styles --- */
+
+
+.adm-assigned-name {
+    color: #2563eb;
+    font-weight: 600;
+    font-size: 0.9rem;
+    background: #eff6ff;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.adm-unassigned {
+    color: #94a3b8;
+    font-style: italic;
+    font-size: 0.85rem;
+}
+
+/* Ensure the table doesn't get too cramped with the extra column */
+.adm-table th, .adm-table td {
+    white-space: nowrap; /* Prevents text from wrapping awkwardly */
+    padding: 12px 15px;
+}
+
+/* Modal Resolve Button Hover */
+.adm-resolve-btn:hover {
+    background-color: #059669;
+    transform: translateY(-1px);
+    transition: 0.2s;
+}
+
+.adm-badge {
+    font-size: 15px;
+}
+.adm-badge.assigned {
+    color: #05a5fc;
+}
+
+.adm-badge.inprogress {
+    /* background: #ffedd5; */
+    color: #d14416;
+}
+
+.adm-badge.new {
+    /* background: #d0bcf1; */
+    color: #075cfa;
+}
+
+.adm-badge.resolved {
+    /* background: #dcfce7; */
+    color: #09db25;
+}
+
+.adm-badge.closed {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+.adm-view-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Modal */
+.adm-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.adm-modal {
+    background: white;
+    width: 900px;
+    height: 500px;
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+}
+
+.adm-modal-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.adm-close-modal {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.adm-detail-row {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.adm-assign-section {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px dashed #eee;
+}
+
+.adm-assign-section select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.adm-resolve-btn {
+    width: 100%;
+    background: #10b981;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Toast */
+.adm-toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #10b981;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}

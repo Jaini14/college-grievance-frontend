@@ -1,0 +1,203 @@
+.prof-page-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Sidebar */
+.prof-side-nav {
+    width: 250px;
+    background-color: #1e293b;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.prof-logo-section {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #3b82f6;
+}
+
+.prof-back-btn {
+    background: #334155;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.prof-back-btn:hover {
+    background: #475569;
+}
+
+/* Main Content */
+.prof-main-content {
+    flex: 1;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.prof-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.prof-header-bg {
+    height: 120px;
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+}
+
+.prof-info-section {
+    padding: 0 40px 40px 40px;
+    position: relative;
+}
+
+.prof-avatar {
+    width: 100px;
+    height: 100px;
+    background: #2563eb;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border: 5px solid white;
+    position: relative;
+    top: -50px;
+    margin-bottom: -30px;
+}
+
+.prof-details-header {
+    margin-bottom: 30px;
+}
+
+/* Input in header while editing */
+.prof-details-header input {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: black;
+    border: 1.5px solid #dbeafe;
+    border-radius: 6px;
+    padding: 5px 10px;
+    outline: none;
+    width: 100%;
+    max-width: 400px;
+}
+
+.prof-details-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #0f172a;
+}
+
+.prof-badge {
+    display: inline-block;
+    background: #dbeafe;
+    color: #1e40af;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+/* Info Grid */
+.prof-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.prof-item label {
+    display: block;
+    color: #64748b;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.prof-item p {
+    margin: 0;
+    font-weight: 600;
+    color: black;
+}
+
+/* Input in grid while editing */
+.prof-item input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: black;
+    outline: none;
+    background-color: #f8fafc;
+    box-sizing: border-box;
+}
+
+.prof-item input:focus {
+    border-color: #3b82f6;
+    background-color: white;
+}
+
+/* Actions Wrapper */
+.prof-actions {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 30px;
+}
+
+/* Common button styles for the actions area */
+.prof-actions button {
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+
+/* Individual Button Colors based on order/text */
+.prof-actions button:first-child:not(:last-child) {
+    background: #10b981; /* Save Button */
+    color: white;
+}
+
+.prof-actions button:last-child:not(:first-child) {
+    background: white;
+    color: #ef4444; /* Cancel Button */
+    border: 1px solid #fecaca;
+}
+
+/* "Edit Profile" button style when not editing */
+.prof-actions button:only-child {
+    background: #2563eb;
+    color: white;
+}
+
+.prof-actions button:hover {
+    opacity: 0.9;
+}
+
+.prof-edit-select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}

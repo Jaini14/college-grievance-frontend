@@ -1,0 +1,130 @@
+.comp-page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.comp-form-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.comp-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.comp-header h2 {
+    color: #0f172a;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.comp-header p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Input Styling */
+.comp-input-box {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comp-input-box label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+.comp-input-box input[type="text"],
+.comp-input-box select,
+.comp-input-box textarea {
+    padding: 12px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.comp-input-box textarea {
+    height: 120px;
+    resize: none;
+}
+
+.comp-input-box input:focus,
+.comp-input-box select:focus,
+.comp-input-box textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* File Upload Area */
+.comp-file-wrapper {
+    border: 2px dashed #cbd5e1;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f8fafc;
+    text-align: center;
+}
+
+.comp-file-wrapper input {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.comp-file-wrapper small {
+    display: block;
+    margin-top: 5px;
+    color: #94a3b8;
+}
+
+/* Buttons */
+.comp-button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.comp-submit-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.comp-submit-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.comp-cancel-btn {
+    background-color: transparent;
+    color: #64748b;
+    border: 1.5px solid #e2e8f0;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.comp-cancel-btn:hover {
+    background-color: #f8fafc;
+    color: #0f172a;
+}

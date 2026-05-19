@@ -1,0 +1,185 @@
+.fac-dash-container {
+    min-height: 100vh;
+    overflow-y: auto;
+    background-color: #f4f7fe;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fac-nav {
+    background-color: white; /* Darker navy for Faculty */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fac-logo { font-weight: 700; font-size: 20px; margin-left: 10px; color: #2563eb;}
+
+.fac-nav-right { display: flex; gap: 20px; }
+
+.fac-nav-link {
+    background: transparent;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.258);
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.fac-nav-link:hover { 
+    color: #2563eb; 
+    border: 1px solid rgba(0, 140, 255, 0.452);
+    transition: 0.2s;
+}
+
+.fac-logout-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.fac-logout-btn:hover {
+    background-color: rgb(226, 0, 0);
+    transition: 0.2s;
+}
+
+.fac-main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.fac-header h2 { color: #1e293b; margin-bottom: 5px; }
+.fac-header p { color: #64748b; margin-bottom: 25px; }
+
+/* Tabs */
+.fac-tab-bar {
+    display: flex;
+    border-bottom: 2px solid #e2e8f0;
+    margin-bottom: 20px;
+}
+
+.fac-tab {
+    padding: 12px 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #64748b;
+    transition: 0.3s;
+}
+
+.fac-tab-active {
+    color: #2563eb;
+    border-bottom: 3px solid #2563eb;
+}
+
+/* Table Card */
+.fac-card {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.fac-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.fac-table th {
+    text-align: left;
+    background: #f8fafc;
+    padding: 12px;
+    color: #475569;
+}
+
+.fac-table td {
+    padding: 12px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.fac-solve-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.fac-empty-state {
+    text-align: center;
+    padding: 40px;
+    color: #64748b;
+}
+
+.fac-primary-btn {
+    margin-top: 15px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Status Text Colors */
+.fac-status-text {
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.status-new { color: #2563eb; background: #eff6ff; }         /* Blue */
+.status-inprogress { color: #f59e0b; background: #fffbeb; }  /* Orange/Yellow */
+.status-resolved { color: #10b981; background: #ecfdf5; }    /* Green */
+
+/* Dropdown specific styling */
+.fac-status-dropdown {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.dropdown-new { border-color: #2563eb; }
+.dropdown-inprogress { border-color: #f59e0b; }
+.dropdown-resolved { border-color: #10b981; }
+
+.notification-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+    border-left: 4px solid #2563eb;
+}
+
+.delete-btn {
+    background: transparent;
+    border: none;
+
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.delete-btn:hover {
+    color: darkred;
+    transform: scale(1.1);
+}
