@@ -10,10 +10,10 @@ import FileComplaint from './components/FileComplaint';
 import Profile from './components/Profile';
 import AdminDashboard from "./components/AdminDashboard";
 import About from './components/About';
-import AssignPage from "./pages/AssignPage";
+import AssignPage from "./pages/Assignpage";
 import ProtectedRoute from './components/ProtectedRoute';
 import FacultyActionPage from "./pages/FacultyActionPage";
-import AdminAssignPage from "./pages/AdminAssignPage";
+import AdminAssignPage from "./Pages/AdminAssignPage";
 import Dashboard from "./pages/Analytics";
 import PublicAnalytics from "./pages/PublicAnalytics";
 import Chatbot from "./components/Chatbot";
@@ -31,7 +31,7 @@ function App() {
         <Route path='/register' element={<Register />} />
         <Route path='/about' element={<About />} />
         <Route path="/assign" element={<AssignPage />} />
-        <Route path="/public-analytics" element={<PublicAnalytics />} />
+        <Route path="/public-analytics" element={<AdminAssignPage />} />
 
         {/* Analytics */}
         <Route
