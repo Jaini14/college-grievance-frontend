@@ -13,7 +13,7 @@ import About from './components/About';
 import AssignPage from "./pages/Assignpage";
 import ProtectedRoute from './components/ProtectedRoute';
 import FacultyActionPage from "./pages/FacultyActionPage";
-import AdminAssignPage from "./Pages/AdminAssignPage";
+import  AdminAssignPage from "./Pages/AdminAssignPage";
 import Dashboard from "./pages/Analytics";
 import PublicAnalytics from "./pages/PublicAnalytics";
 import Chatbot from "./components/Chatbot";
@@ -31,7 +31,7 @@ function App() {
         <Route path='/register' element={<Register />} />
         <Route path='/about' element={<About />} />
         <Route path="/assign" element={<AssignPage />} />
-        <Route path="/public-analytics" element={<AdminAssignPage />} />
+        <Route path="/public-analytics" element={<PublicAnalytics />} />
 
         {/* Analytics */}
         <Route
