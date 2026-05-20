@@ -89,7 +89,7 @@ function Register() {
       setSendingOtp(true);
 
       const response = await fetch(
-        "https://college-grievance-backend-85gg.onrender.com/api/send-otp/",
+        " http://127.0.0.1:8000/api/send-otp/",
         {
           method: "POST",
           headers: {
@@ -143,7 +143,7 @@ function Register() {
       setRegistering(true);
 
       const response = await fetch(
-        "https://college-grievance-backend-85gg.onrender.com/api/register/",
+        " http://127.0.0.1:8000/api/register/",
         {
           method: "POST",
           headers: {

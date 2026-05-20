@@ -56,7 +56,7 @@ How can I help you today?`
       console.log("CHATBOT TOKEN:", token);
 
       const response = await fetch(
-        "https://college-grievance-backend-85gg.onrender.com/api/chatbot/",
+        " http://127.0.0.1:8000/api/chatbot/",
         {
           method: "POST",
           headers: {

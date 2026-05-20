@@ -19,7 +19,7 @@ function AdminDashboard() {
     try {
       setLoading(true);
 
-      const res = await fetch("https://college-grievance-backend-85gg.onrender.com/api/admin/dashboard/", {
+      const res = await fetch(" http://127.0.0.1:8000/api/admin/dashboard/", {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json"
@@ -72,7 +72,7 @@ function AdminDashboard() {
     }
 
     const response = await fetch(
-      `https://college-grievance-backend-85gg.onrender.com/api/grievance-report/${id}/`,
+      ` http://127.0.0.1:8000/api/grievance-report/${id}/`,
       {
         method: "GET",
         headers: {

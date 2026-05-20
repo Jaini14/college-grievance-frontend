@@ -17,7 +17,7 @@ function FacultyActionPage() {
 
   // Fetch grievance details
   useEffect(() => {
-    fetch("https://college-grievance-backend-85gg.onrender.com/api/faculty/dashboard/", {
+    fetch(" http://127.0.0.1:8000/api/faculty/dashboard/", {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -62,7 +62,7 @@ function FacultyActionPage() {
 
     try {
       const res = await fetch(
-        "https://college-grievance-backend-85gg.onrender.com/api/grievance/update-status/",
+        " http://127.0.0.1:8000/api/grievance/update-status/",
         {
           method: "PUT",
           headers: {

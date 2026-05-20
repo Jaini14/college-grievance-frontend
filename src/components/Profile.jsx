@@ -25,7 +25,7 @@ function Profile() {
     const fetchProfile = async () => {
       try {
         const res = await fetch(
-          "https://college-grievance-backend-85gg.onrender.com/api/profile/",
+          " http://127.0.0.1:8000/api/profile/",
           {
             headers: {
               Authorization: `Bearer ${token}`
@@ -85,7 +85,7 @@ function Profile() {
   const handleSaveClick = async () => {
     try {
       const response = await fetch(
-        "https://college-grievance-backend-85gg.onrender.com/api/profile/update/",
+        " http://127.0.0.1:8000/api/profile/update/",
         {
           method: "PUT",
           headers: {

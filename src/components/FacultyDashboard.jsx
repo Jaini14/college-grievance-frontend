@@ -25,7 +25,7 @@ function FacultyDashboard() {
 
     // ✅ Dashboard API
     axios
-      .get("https://college-grievance-backend-85gg.onrender.com/api/faculty/dashboard/", {
+      .get(" http://127.0.0.1:8000/api/faculty/dashboard/", {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -78,7 +78,7 @@ function FacultyDashboard() {
   try {
 
     const response = await fetch(
-      `https://college-grievance-backend-85gg.onrender.com/api/faculty/notifications/delete/${notificationId}/`,
+      ` http://127.0.0.1:8000/api/faculty/notifications/delete/${notificationId}/`,
       {
         method: "DELETE",
         headers: {
@@ -105,7 +105,7 @@ function FacultyDashboard() {
   const updateStatus = async (id, newStatus) => {
     try {
       const res = await fetch(
-        "https://college-grievance-backend-85gg.onrender.com/api/grievance/update-status/",
+        " http://127.0.0.1:8000/api/grievance/update-status/",
         {
           method: "PUT",
           headers: {
@@ -152,7 +152,7 @@ function FacultyDashboard() {
       }
 
       const response = await fetch(
-        `https://college-grievance-backend-85gg.onrender.com/api/grievance-report/${id}/`,
+        ` http://127.0.0.1:8000/api/grievance-report/${id}/`,
         {
           method: "GET",
           headers: {

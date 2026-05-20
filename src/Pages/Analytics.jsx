@@ -19,7 +19,7 @@ const Analytics = () => {
         }
 
         const res = await axios.get(
-          "https://college-grievance-backend-85gg.onrender.com/api/analytics/",
+          " http://127.0.0.1:8000/api/analytics/",
           {
             headers: { Authorization: `Bearer ${token}` },
           }

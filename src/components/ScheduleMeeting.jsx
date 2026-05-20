@@ -24,7 +24,7 @@ function ScheduleMeeting() {
     e.preventDefault();
 
     const res = await fetch(
-      "https://college-grievance-backend-85gg.onrender.com/api/create-meeting/",
+      " http://127.0.0.1:8000/api/create-meeting/",
       {
         method: "POST",
         headers: {

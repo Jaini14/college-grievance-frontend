@@ -50,7 +50,7 @@ function FileComplaint() {
         formPayload.append("image", formData.image);
       }
 
-      const response = await fetch("https://college-grievance-backend-85gg.onrender.com/api/grievance/create/", {
+      const response = await fetch(" http://127.0.0.1:8000/api/grievance/create/", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`

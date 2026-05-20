@@ -11,7 +11,7 @@ import "chart.js/auto";
 
 // ✅ FIXED API FUNCTION (added /api/)
 const getAnalytics = (token) => {
-  return axios.get("https://college-grievance-backend-85gg.onrender.com/api/public-analytics/", {
+  return axios.get(" http://127.0.0.1:8000/api/public-analytics/", {
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -49,7 +49,7 @@ function UserDashboard() {
     }
 
     const response = await fetch(
-      `https://college-grievance-backend-85gg.onrender.com/api/grievance-report/${id}/`,
+      ` http://127.0.0.1:8000/api/grievance-report/${id}/`,
       {
         method: "GET",
         headers: {
@@ -100,7 +100,7 @@ function UserDashboard() {
     const fetchDashboard = async () => {
       try {
         const response = await fetch(
-          "https://college-grievance-backend-85gg.onrender.com/api/student/dashboard/",
+          " http://127.0.0.1:8000/api/student/dashboard/",
           {
             headers: {
               Authorization: `Bearer ${token}`,

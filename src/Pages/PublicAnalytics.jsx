@@ -11,7 +11,7 @@ function PublicAnalytics() {
 
   useEffect(() => {
     axios
-      .get("https://college-grievance-backend-85gg.onrender.com/api/public-analytics/")
+      .get(" http://127.0.0.1:8000/api/public-analytics/")
       .then(res => setData(res.data))
       .catch(err => console.log(err));
   }, []);

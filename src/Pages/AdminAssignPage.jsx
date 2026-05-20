@@ -16,7 +16,7 @@ function AdminAssignPage() {
   const [filter, setFilter] = useState("ALL");
 
   useEffect(() => {
-    fetch("https://college-grievance-backend-85gg.onrender.com/api/admin/dashboard/", {
+    fetch(" http://127.0.0.1:8000/api/admin/dashboard/", {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then(res => res.json())
@@ -115,7 +115,7 @@ function AdminAssignPage() {
     }
 
     const res = await fetch(
-      "https://college-grievance-backend-85gg.onrender.com/api/grievance/assign/",
+      " http://127.0.0.1:8000/api/grievance/assign/",
       {
         method: "POST",
         headers: {
