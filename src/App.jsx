@@ -14,7 +14,7 @@ import About from './components/About';
 import AssignPage from "./pages/AssignPage";
 import ProtectedRoute from './components/ProtectedRoute';
 import FacultyActionPage from "./pages/FacultyActionPage";
-import  AdminAssignPage from "./Pages/AdminAssignPage";
+import  AdminAssignPage from "./pages/AdminAssignPage";
 import Dashboard from "./pages/Analytics";
 import PublicAnalytics from "./pages/PublicAnalytics";
 import Chatbot from "./components/Chatbot";
