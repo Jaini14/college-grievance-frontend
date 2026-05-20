@@ -10,7 +10,7 @@ import FileComplaint from './components/FileComplaint';
 import Profile from './components/Profile';
 import AdminDashboard from "./components/AdminDashboard";
 import About from './components/About';
-import AssignPage from "./pages/AssignPage";
+import AssignPage from "./pages/Assignpage";
 import ProtectedRoute from './components/ProtectedRoute';
 import FacultyActionPage from "./pages/FacultyActionPage";
 import AdminAssignPage from "./Pages/AdminAssignPage";
